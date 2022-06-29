@@ -1,24 +1,48 @@
+import React from 'react';
 import './App.css';
 
+export class Quotes extends React.Component {
+  coffeeQuotes(){
+    alert(`It can help boost energy level.`)
+  }
+  render() {
+    return (
+      <div className='App'>
+        <h1>Coffee is God!</h1>
+        <div>
+          <img
+            src='https://cdn1.vectorstock.com/i/1000x1000/66/65/i-love-coffee-vector-2076665.jpg' 
+            alt='coffeeimage1'
+            width='200px'
+            height='180px'
+            onClick={this.coffeeQuotes}
+          />
+        </div>
+      </div>
+    )
+  }
+}
+
+/*
 function App() {
   const handleClick1 = () => {
-    alert('It can lead to addiction.')
+    alert('It can help boost energy level.')
   }
   const handleClick2 = () => {
-    alert('It can disrupt sleep.')
+    alert('It supports heart health.')
   }
   const handleClick3 = () => {
-    alert('It has bloodpressure-raising effects.')
+    alert('It could protect against liver conditions.')
   }
   const handleClick4 = () => {
-    alert('It can lead to anxiety.')
+    alert('It is linked to a lower risk of depression.')
   }
   return (
     <div className="App">
-     <h1>Coffee is Bad!</h1>
+     <h1>Coffee is God!</h1>
      <div>
          <img 
-           src='https://media.makeameme.org/created/i-hate-coffee-ab3dd0c43f.jpg' 
+           src='https://cdn1.vectorstock.com/i/1000x1000/66/65/i-love-coffee-vector-2076665.jpg' 
            alt='coffeeimage1'
            width='200px'
            height='180px'
@@ -27,7 +51,7 @@ function App() {
      </div>
      <div>
          <img 
-           src='https://www.bulletproof.com/wp-content/uploads/2014/02/bad-coffee.jpg' 
+           src='http://cdn.shopify.com/s/files/1/0818/7575/articles/2017061310ReasonsIloveCoffee_1024x1024.jpg?v=1564963052' 
            alt='coffeeimage2'
            width='200px'
            height='180px' 
@@ -36,7 +60,7 @@ function App() {
      </div>
      <div>
          <img 
-           src='https://img.livestrong.com/375/media-storage/contentlab-data/7/1/17f7761e1d3c473b91fc1528b9772db3.jpg' 
+           src='https://thumbs.dreamstime.com/z/i-love-coffee-i-love-coffee-glass-cup-close-up-name-i-love-coffee-grey-grunge-background-lots-scattered-coffee-154296562.jpg' 
            alt='coffeeimage3'
            width='200px'
            height='180px' 
@@ -45,7 +69,7 @@ function App() {
      </div>
      <div>
          <img 
-           src='https://previews.123rf.com/images/red33/red331209/red33120900034/15481763-%E5%8E%84%E4%BB%8B%E3%81%AA%E5%B9%B3%E5%9D%87%E6%82%AA%E3%81%84%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E3%82%AB%E3%83%83%E3%83%97-%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88-%E3%82%A2%E3%83%BC%E3%83%88.jpg' 
+           src='https://i.etsystatic.com/22467704/r/il/945698/3004299322/il_fullxfull.3004299322_3azs.jpg' 
            alt='coffeeimage4'
            width='200px'
            height='180px' 
@@ -58,3 +82,4 @@ function App() {
 }
 
 export default App;
+*/
